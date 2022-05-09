@@ -1,0 +1,211 @@
+{
+  // -------------------------------------- Common --------------------------------------
+  // Window
+  "window.closeWhenEmpty": true,
+  "window.customMenuBarAltFocus": false,
+  "window.title": "${dirty}${activeEditorShort} / ${rootName}",
+  "window.zoomLevel": 1,
+  // Editor
+  "editor.detectIndentation": false,
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "Ricty Diminished, Consolas, Meiryo",
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.size": "fill",
+  "editor.wordWrap": "on",
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "boundary",
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.copyRelativePathSeparator": "/",
+  "explorer.sortOrder": "type",
+  // File
+  "files.autoGuessEncoding": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  // Terminal
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.fontFamily": "Ricty Diminished, Consolas, Meiryo",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.profiles.windows": {
+    "GitBash": {
+      "path": ["C:\\tool\\Git\\bin\\bash.exe"],
+      "icon": "terminal-bash",
+      "args": ["-l"]
+    }
+  },
+  // Workbench
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.commandPalette.preserveInput": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.tree.indent": 12,
+  // Problems
+  "problems.sortOrder": "severity",
+  // Git
+  "git.autofetch": true,
+  // Proxy
+  // "http.proxy": "<Proxy>",
+  // -------------------------------------- Extensions --------------------------------------
+  // Insert date string
+  "insertDateString.formatDate": "YYYY/MM/DD",
+  "insertDateString.format": "YYYY/MM/DD hh:mm:ss",
+  // Local history
+  "local-history.absolute": true,
+  "local-history.path": "C:\\",
+  "local-history.treeLocation": "localHistory",
+  // Merge n paste
+  "merge-n-paste.pathToMergeTool": "\"C:\\tool\\WinMerge\\WinMergeU.exe\" %C %E",
+  // PowerShell
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.codeFormatting.ignoreOneLineBlock": false,
+  "powershell.codeFormatting.useConstantStrings": true,
+  "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+  "powershell.codeFormatting.openBraceOnSameLine": false,
+  // CSV TSV
+  "csv-edit.readOption_hasHeader": "true",
+  "csv-edit.writeOption_hasHeader": "true",
+  "csv-edit.openSourceFileAfterApply": true,
+  "csv-edit.quoteAllFields": true,
+  "csv-preview.resizeColumns": "all",
+  // Markdown
+  "markdown.extension.toc.updateOnSave": false,
+  "markdown.extension.orderedList.marker": "one",
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "pasteImage.path": "${currentFileDir}/images",
+  "pasteImage.insertPattern": "@import \"${imageFilePath}\" {alt=\"image\"}",
+  "pasteImage.defaultName": "YMMDD_HHmmss",
+  // PlantUML
+  "plantuml.commandArgs": ["-DPLANTUML_LIMIT_SIZE=8192", "-Xmx1024m"],
+  // Python
+  "autoDocstring.docstringFormat": "numpy",
+  "autoDocstring.includeName": true,
+  "autoDocstring.startOnNewLine": true,
+  "jupyter.askForKernelRestart": false,
+  "python.formatting.autopep8Args": ["--max-line-length", "100"],
+  "python.formatting.provider": "autopep8",
+  "python.languageServer": "Pylance",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Args": [
+    "--max-line-length",
+    "100",
+    "--max-complexity",
+    "20"
+  ],
+  "python.venvPath": "venv, .venv",
+  // Spell Check
+  "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶｦ-ﾟ亜-熙纊-黑]+"],
+  "cSpell.ignoreWords": [],
+  "cSpell.userWords": [
+    "arange",
+    "iterrows",
+    "mdates",
+    "openpyxl",
+    "psutil",
+    "pyplot"
+  ],
+  // Codic
+  "codic.ACCESS_TOKEN": "<Codic Token>",
+  "codic.case": "snake_case",
+  // Comment
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  // ToDo tree
+  "todo-tree.regex.regex": "((REM|rem)|//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
+  // YAML
+  "redhat.telemetry.enabled": false,
+  // -------------------------------------- Languages --------------------------------------
+  "[bat]": {
+    "files.encoding": "shiftjis",
+    "files.autoGuessEncoding": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.quickSuggestions": true,
+    "editor.snippetSuggestions": "top",
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": false
+  },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4
+  },
+  "[tsv]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": false
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  }
+}
