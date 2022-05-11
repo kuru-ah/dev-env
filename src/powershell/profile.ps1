@@ -19,6 +19,8 @@ Set-Alias -Name .. -Value Set-LocationParentDirectory -Option AllScope
 # neo vim
 Set-Alias -Name vi -Value nvim -Option AllScope
 Set-Alias -Name vim -Value nvim -Option AllScope
+function Nvim-View { nvim -R $args }
+Set-Alias -Name view -Value Nvim-View -Option AllScope
 
 
 # git
