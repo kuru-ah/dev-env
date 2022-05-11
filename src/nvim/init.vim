@@ -43,10 +43,4 @@ endif
 set clipboard+=unnamed
 " キーマッピング
 inoremap <silent> jj <ESC>
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap < <><LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
 nnoremap <ESC><ESC> :nohlsearch<CR>
