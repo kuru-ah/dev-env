@@ -1,0 +1,35 @@
+[user]
+  name = name
+  email = mail
+[core]
+  editor = nvim
+  sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+[fetch]
+  prune = true
+
+[diff]
+  tool = WinMerge
+[difftool]
+  prompt = false
+[difftool "WinMerge"]
+  path = WinMergeU.exe
+  cmd = WinMergeU.exe -f \"*.*\" -e -u -r \"$LOCAL\" \"$REMOTE\"
+[merge]
+  tool = p4merge
+[mergetool]
+  prompt = false
+  keepBackup = false
+[mergetool "WinMerge"]
+  path = WinMergeU.exe
+  cmd = WinMergeU.exe -e -u \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool "p4merge"]
+  path = p4merge.exe
+  cmd = p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+  keepTemporaries = false
+  trustExitCode = false
+[alias]
+  windiff = difftool -y -d -t WinMerge
+  winmerge = mergetool -y -t WinMerge
+  p4merge = mergetool -y -t p4merge
+  lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %C(bold blue)%an %C(green)%cr%Creset' --abbrev-commit
+  lga = log --graph --all --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %C(bold blue)%an %C(green)%cr%Creset' --abbrev-commit

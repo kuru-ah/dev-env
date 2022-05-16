@@ -127,12 +127,7 @@ alias c='clear'
 
 mcd() { mkdir -p $1 && cd $1; }
 
-
 # neo vim 
 alias vi='nvim'
 alias vim='nvim'
 alias view='nvim -R'
-
-# git
-alias gitl='git log --oneline --graph --all'
-alias gits='git status'

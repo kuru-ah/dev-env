@@ -23,12 +23,4 @@ function Nvim-View { nvim -R $args }
 Set-Alias -Name view -Value Nvim-View -Option AllScope
 
 
-# git
-function Git-Status { git status $args }
-Set-Alias -Name gits -Value Git-Status -Option AllScope
-
-function Git-Log { git log --oneline --all --graph $args }
-Set-Alias -Name gitl -Value Git-Log -Option AllScope
-
-
 Pop-Location

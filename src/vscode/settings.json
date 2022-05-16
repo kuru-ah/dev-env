@@ -4,7 +4,6 @@
   "window.closeWhenEmpty": true,
   "window.customMenuBarAltFocus": false,
   "window.title": "${dirty}${activeEditorShort} / ${rootName}",
-  "window.zoomLevel": 1,
   // Editor
   "editor.detectIndentation": false,
   "editor.dragAndDrop": false,
@@ -53,8 +52,6 @@
   "problems.sortOrder": "severity",
   // Git
   "git.autofetch": true,
-  // Proxy
-  // "http.proxy": "<Proxy>",
   // -------------------------------------- Extensions --------------------------------------
   // Insert date string
   "insertDateString.formatDate": "YYYY/MM/DD",
